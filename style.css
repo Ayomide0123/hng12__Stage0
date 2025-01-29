@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", serif;
+  background-color: #AFDBF5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-bottom: 7px solid #012169;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 40px;
+  overflow: auto;
+}
+
+.imageContainer {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.imageContainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+a[data-testid="emailAddress"]{
+  text-decoration: none;
+  padding: 8px 20px;
+  background-color: #012169;
+  border-radius: 10px;
+  color: white;
+  margin: 10px 0;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+div[data-testid="socialLinks"] {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.fab {
+  font-size: 40px;
+  color: #012169;
+}
+
+h1[data-testid="fullName"] {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h4[data-testid="jobTitle"] {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+p[data-testid="currentLocation"] {
+  font-weight: 500;
+}
+
+p[data-testid="currentLocation"],
+p[data-testid="shortBio"],
+p[data-testid="currentTimeUTC"] {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  div[data-testid="socialLinks"] {
+    width: 80%;
+  }
+
+  h1[data-testid="fullName"] {
+    font-size: 1.75rem;
+  }
+
+  h4[data-testid="jobTitle"] {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .imageContainer{
+    margin-bottom: 10px;
+  }
+  .bio{
+    margin-bottom: 10px;
+  }
+  .fab {
+    font-size: 30px;
+  }
+
+  h1[data-testid="fullName"] {
+    font-size: 1.5rem;
+  }
+
+  h4[data-testid="jobTitle"] {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}

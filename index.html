@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Profile Card: Oyetimehin Ayomide</title>
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Image, FullName and Job -->
+    <div class="imageContainer">
+      <img src="./images/profilePicture.png" alt="profilePicture" data-testid="profilePicture">
+      <div>
+        <h1 data-testid="fullName">Oyetimehin Ayomide</h1>
+        <h4 data-testid="jobTitle">Frontend Developer</h4>
+        <p data-testid="currentLocation">Lagos, Nigeria.</p>
+      </div>
+    </div>
+    <!-- Bio -->
+    <div class="bio">
+      <p data-testid="shortBio">Passionate about crafting beautiful and high-performance web experiences. I thrive on solving problems with code, debugging like a detective, and turning ideas into reality. When I'm not coding, you'll find me playing games, watching movies, or exploring new tech. Constantly leveling up - one line of code at a time!</p>
+
+        <a href="mailto:oyetimehin31@gmail.com" data-testid="emailAddress">oyetimehin31@gmail.com</a>
+    </div>
+    <!-- Social Links -->
+    <div class="socialMedia">
+
+      <div data-testid="socialLinks">
+        <a href="https://www.linkedin.com/in/ayomide-oyetimehin-6946411b9/" target="_blank" rel="noopener" title="LinkedIn Profile">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Ayomide0123" target="_blank" rel="noopener" title="GitHub Profile">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/just_ayomide_" target="_blank" rel="noopener" title="Twitter Profile">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://medium.com/@oyetimehin31" target="_blank" rel="noopener" title="Medium Blog">
+          <i class="fab fa-medium"></i>
+        </a>
+      </div>
+        <p data-testid="currentTimeUTC"></p>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
